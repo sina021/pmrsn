@@ -7,7 +7,7 @@ HTTPS = require('ssl.https')
 redis_server = require('redis') --https://github.com/nrk/redis-lua
 redis = redis_server.connect('127.0.0.1', 6379)
 ----config----
-local bot_api_key = "" --Your telegram bot api key
+local bot_api_key = "220481632:AAGIaGU7sVw0131ykVwt9JbAjHZc7L_rUmw" --Your telegram bot api key
 local BASE_URL = "https://api.telegram.org/bot"..bot_api_key
 local BASE_FOLDER = ""
 local start = [[/setdn `<done msg>`
@@ -36,7 +36,7 @@ _reload bot!_
 
 function is_admin(msg)-- Check if user is admin or not
   local var = false
-  local admins = {140529465}-- put your id here
+  local admins = {112274576}-- put your id here
   for k,v in pairs(admins) do
     if msg.from.id == v then
       var = true
